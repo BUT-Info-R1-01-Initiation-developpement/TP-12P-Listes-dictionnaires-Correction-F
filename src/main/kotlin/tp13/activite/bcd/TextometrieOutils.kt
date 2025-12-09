@@ -35,6 +35,35 @@ object TextometrieOutils {
     }
 
     /**
+    * Récupère les tokens d'un texte dans une liste.
+    * @param texte Le texte dont on veut récupérer les tokens.
+    * @return la liste contenant les tokens.
+    */
+    fun listeTokens(texte: String): List<String> {
+        if (texte.length == 0) {
+            return listOf<String>()
+        }
+        val tokens = mutableListOf<String>()
+        var caracterePrecedentEstSeparateur = true
+        var caractereCourantEstSeparateur: Boolean
+        var token = ""
+        for (c in texte) {
+            caractereCourantEstSeparateur = caractereEstSeparateurDeToken(c)
+            if (!caractereCourantEstSeparateur) {
+                token += c
+            } else if (!caracterePrecedentEstSeparateur) {
+                tokens.add(token)
+                token = ""
+            }
+            caracterePrecedentEstSeparateur = caractereCourantEstSeparateur
+        }
+        if (!caractereEstSeparateurDeToken(dernierCaractere(texte))) { // cas du dernier caractère
+            tokens.add(token)
+        }
+        return tokens.toList()
+    }
+
+    /**
      * Teste si un carcatère est un séparateur de token.
      *
      * @param caractere le caractère à tester.

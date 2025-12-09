@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class TextometrieWithListTest {
-/*
+
     val texteReference = "L’éléphant mange des pommes-de-terre ! Qu’est-ce qu’il aime ? Il n’aime pas… les carottes."
 
     @Test
@@ -42,5 +42,4 @@ class TextometrieWithListTest {
         assertEquals("abcdefgh", tokens.last())
         assertEquals(2, tokens.size)
     }
-*/
 }
