@@ -40,7 +40,7 @@ class TokenTest {
         assertEquals("abcde", tok.contenu)
         assertEquals(5, tok.longueur)
     }
-    /*
+
         //=== Tests de comparaison alphabétique de deux tokens
 
         @Test
@@ -58,7 +58,7 @@ class TokenTest {
             assertTrue(token1.compareTo(token2) == 0)
             assertTrue(token2.compareTo(token1) == 0)
         }
-
+    /*
         //=== Tests l'insertion d'un token dans une liste triée
 
         @Test
