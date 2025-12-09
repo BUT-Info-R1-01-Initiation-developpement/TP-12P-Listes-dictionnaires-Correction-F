@@ -58,7 +58,7 @@ class TokenTest {
             assertTrue(token1.compareTo(token2) == 0)
             assertTrue(token2.compareTo(token1) == 0)
         }
-    /*
+
         //=== Tests l'insertion d'un token dans une liste triée
 
         @Test
@@ -99,5 +99,4 @@ class TokenTest {
             assertEquals(Token("accd"), tokens[2])
             assertEquals(Token("adcd"), tokens[3])
         }
-    */
 }
