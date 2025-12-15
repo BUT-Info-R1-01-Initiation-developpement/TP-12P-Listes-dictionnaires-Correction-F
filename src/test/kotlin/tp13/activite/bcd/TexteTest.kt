@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class TexteTest {
-/*
+
     val texteReference = Texte("L’éléphant mange des pommes-de-terre ! Qu’est-ce qu’il aime ? Il n’aime pas… les carottes.")
 
     // === Tests sur tokens
@@ -45,21 +45,21 @@ class TexteTest {
         assertEquals("abcdefgh", tokens.first().contenu)
         assertEquals(2, tokens.size)
     }
+    /*
+        // === Tests sur nombre occurrences
 
-    // === Tests sur nombre occurrences
+        @Test
+        fun `test le nombre de token sur le texte de référence (sans map)`() {
+            assertEquals(0, texteReference.nombreOccurrencesSansMap(Token("chat")))
+            assertEquals(1, texteReference.nombreOccurrencesSansMap(Token("éléphant")))
+            assertEquals(2, texteReference.nombreOccurrencesSansMap(Token("aime")))
+        }
 
-    @Test
-    fun `test le nombre de token sur le texte de référence (sans map)`() {
-        assertEquals(0, texteReference.nombreOccurrencesSansMap(Token("chat")))
-        assertEquals(1, texteReference.nombreOccurrencesSansMap(Token("éléphant")))
-        assertEquals(2, texteReference.nombreOccurrencesSansMap(Token("aime")))
-    }
-
-    @Test
-    fun `test le nombre de token sur le texte de référence`() {
-        assertEquals(0, texteReference.nombreOccurrences(Token("chat")))
-        assertEquals(1, texteReference.nombreOccurrences(Token("éléphant")))
-        assertEquals(2, texteReference.nombreOccurrences(Token("aime")))
-    }
-*/
+        @Test
+        fun `test le nombre de token sur le texte de référence`() {
+            assertEquals(0, texteReference.nombreOccurrences(Token("chat")))
+            assertEquals(1, texteReference.nombreOccurrences(Token("éléphant")))
+            assertEquals(2, texteReference.nombreOccurrences(Token("aime")))
+        }
+    */
 }
