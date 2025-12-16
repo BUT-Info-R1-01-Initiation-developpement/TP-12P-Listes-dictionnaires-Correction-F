@@ -12,8 +12,9 @@ class Texte(val contenu: String) {
     private val tokensAvecOccurences: Map<Token, Int>
 
     init {
-        this.tokens = this.buildListeEtMapTokens().first
-        this.tokensAvecOccurences = this.buildListeEtMapTokens().second
+        val res = this.buildListeEtMapTokens()
+        this.tokens = res.first
+        this.tokensAvecOccurences = res.second
     }
 
     /**
