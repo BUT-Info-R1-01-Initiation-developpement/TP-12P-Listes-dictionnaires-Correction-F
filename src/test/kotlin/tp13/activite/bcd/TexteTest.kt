@@ -45,7 +45,7 @@ class TexteTest {
         assertEquals("abcdefgh", tokens.first().contenu)
         assertEquals(2, tokens.size)
     }
-    /*
+
         // === Tests sur nombre occurrences
 
         @Test
@@ -61,5 +61,5 @@ class TexteTest {
             assertEquals(1, texteReference.nombreOccurrences(Token("éléphant")))
             assertEquals(2, texteReference.nombreOccurrences(Token("aime")))
         }
-    */
+
 }
